@@ -1,18 +1,48 @@
 <!doctype html>
 <html lang="en">
-
+<!-- ================================== HEAD ================================== -->
 <head>
-  <meta charset="utf-8">
-  <title>Bulma Test Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <meta charset="utf-8">
+    <title>Bulma Test Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ================================== CUSTOM CSS ================================== -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- ================================== BULMA CSS FRAMEWORK ================================== -->
+    <link rel="shortcut icon" href="https://bulma.io/favicons/favicon.ico?v=201701041855">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 
-<body>
+<!-- ================================== BODY ================================== -->
+<body class="is-full has-background-white-bis" style="height: 100vh;">
+<!-- Main -->
+<main class="pt-6">
+    <!-- ================================== FIRST NAVBAR ================================== -->
+    <header class="navbar has-shadow py-3">
+        <nav class="is-full app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between" role="navigation" aria-label="Navigation">
+            <div class="navbar-menu">
+                <div class="navbar-item">
+                    <h1 class="has-text-weight-bold">BRAND</h1>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start is-full">
+                    <a href="/"
+                       class="navbar-item px-5 is-spaced has-text-info is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
+                        <div class="p-1 has-background-info" style="overflow: hidden;border-radius: 50%"></div>
+                        <span class="pl-2">Home</span>
+                    </a>
+                    <a href="/" class="navbar-item px-5 has-text-grey-lighter">About</a>
+                    <a href="/" class="navbar-item px-5 has-text-grey-lighter">Portfolio</a>
+                    <a href="/" class="navbar-item px-5 has-text-grey-lighter">Blog</a>
+                    <a href="/" class="navbar-item px-5 has-text-grey-lighter">Contacts</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</main>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
 </body>
 
 </html>
