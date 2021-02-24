@@ -12,6 +12,10 @@
     <!-- ================================== BULMA CSS FRAMEWORK ================================== -->
     <link rel="shortcut icon" href="https://bulma.io/favicons/favicon.ico?v=201701041855">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <!-- ================================== FONTAWESOME ================================== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <!-- ================================== BODY ================================== -->
@@ -19,15 +23,16 @@
 <!-- Main -->
 <main class="pt-6">
     <!-- ================================== FIRST NAVBAR ================================== -->
-    <header class="navbar has-shadow py-3">
-        <nav class="is-full app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between" role="navigation" aria-label="Navigation">
-            <div class="navbar-menu">
+    <header class="navbar box py-3">
+        <div class="app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between"
+             role="navigation" aria-label="Navigation">
+            <div class="w-full">
                 <div class="navbar-item">
-                    <h1 class="has-text-weight-bold">BRAND</h1>
+                    <h1 class="brand">BRAND</h1>
                 </div>
             </div>
-            <div class="navbar-menu">
-                <div class="navbar-start is-full">
+            <div class="w-50%">
+                <div class="navbar-start">
                     <a href="/"
                        class="navbar-item px-5 is-spaced has-text-info is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
                         <div class="p-1 has-background-info" style="overflow: hidden;border-radius: 50%"></div>
@@ -39,10 +44,513 @@
                     <a href="/" class="navbar-item px-5 has-text-grey-lighter">Contacts</a>
                 </div>
             </div>
+        </div>
+    </header>
+    <br><br><br>
+
+    <!-- ================================== SECOND NAVBAR ================================== -->
+    <div class="is-relative">
+        <header class="box w-full">
+            <nav class="navbar app-container">
+                <div class="navbar-menu">
+                    <div class="navbar-start w-full">
+                        <a href="/" class="navbar-item"> Home </a>
+                        <a href="/" class="navbar-item ml-5 has-text-grey-lighter">About</a>
+                        <a href="/" class="navbar-item ml-5 has-text-grey-lighter">Portfolio</a>
+                        <a href="/" class="navbar-item ml-5 has-text-grey-lighter">Blog</a>
+                        <a href="/" class="navbar-item ml-5 has-text-grey-lighter">Contacts</a>
+                    </div>
+                </div>
+
+                <div class="navbar-menu">
+                    <h1 class="brand">BRAND</h1>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item is-flex is-flex-direction-row is-align-content-center is-justify-content-end">
+                        <div class="has-text-weight-medium pr-3">Patrick Lawrence</div>
+                        <div class="">
+                            <img src="https://images.unsplash.com/photo-1578489758854-f134a358f08b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                 alt="Client Image" class="avatar">
+                        </div>
+                        <div class="icon is-small pl-3">
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <hr class="navbar-divider w-90%" style="margin: auto">
+
+            <nav class="navbar app-container">
+                <div class="w-full has-text-weight-medium is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between">
+                    <div class="has-text-weight-bold">New products</div>
+                    <div class="navbar-start pl-6">
+                        <a class="navbar-item" href="#">Menu</a>
+                        <a class="navbar-item" href="#">Women</a>
+                        <a class="navbar-item" href="#">Kids</a>
+                        <a class="navbar-item" href="#">Accessories</a>
+                        <a class="navbar-item" href="#">Top sales</a>
+                    </div>
+                </div>
+
+                <div class="w-full is-flex-direction-row is-flex is-align-items-center is-justify-content-end">
+                    <div class="navbar-end">
+                        <div><i class="fa fa-search fa-lg"></i></div>
+                        <div class="mx-4"><i class="fa fa-heart fa-lg"></i></div>
+                        <div class="is-relative">
+                            <i class="fa fa-shopping-cart fa-lg"></i>
+                            <div class="bg-x">7</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="box" style="border-radius: unset !important;">
+            <div class="app-container columns" style="margin: auto">
+                <div class="column is-3">
+                    <div class="column-part">
+                        <div class="is-flex-direction-row column-section is-flex is-align-content-center is-justify-content-start">
+                            <h4 class="column-heading">Outwear</h4>
+                        </div>
+                        <div class="">
+                            <div class="column-section">Coats</div>
+                            <div class="column-section">Jackets</div>
+                            <div class="is-flex-direction-row column-section is-flex is-align-content-start is-justify-content-start">
+                                <div>Cloaks</div>
+                                <div class="badge is-info has-text-white">New</div>
+                            </div>
+                            <div class="column-section">Winter jackets</div>
+                            <div class="column-section">Windbreakers</div>
+                        </div>
+                    </div>
+                    <div class="column-part">
+                        <div class="is-flex-direction-row column-section is-flex is-align-content-center is-justify-content-start">
+                            <h4 class="column-heading">Jumpers and Cardigans</h4>
+                        </div>
+                        <div class="">
+                            <div class="column-section">Vests</div>
+                            <div class="column-section">Cardigans</div>
+                            <div class="column-section">Jumpers</div>
+                            <div class="column-section">Sweaters</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3">
+                    <div class="column-part">
+                        <div class="is-flex-direction-row column-section is-flex is-align-content-center is-justify-content-start">
+                            <h4 class="column-heading">Pants and Jeans</h4>
+                        </div>
+                        <div class="">
+                            <div class="column-section">Classic</div>
+                            <div class="is-flex-direction-row column-section is-flex is-align-content-start is-justify-content-start">
+                                <div>Sports</div>
+                                <div class="badge is-info has-text-white">New</div>
+                            </div>
+                            <div class="column-section">Joans</div>
+                            <div class="column-section">Daily</div>
+                            <div class="column-section">Warm</div>
+                        </div>
+                    </div>
+                    <div class="column-part">
+                        <div class="is-flex-direction-row column-section is-flex is-align-content-center is-justify-content-start">
+                            <h4 class="column-heading">T-shirts and shirts</h4>
+                        </div>
+                        <div class="">
+                            <div class="column-section">T-shirts</div>
+                            <div class="is-flex-direction-row column-section is-flex is-align-content-start is-justify-content-start">
+                                <div>Polo</div>
+                                <div class="badge is-info has-text-white">New</div>
+                            </div>
+                            <div class="column-section">Shirts</div>
+                            <div class="column-section">Undershirts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3">
+                    <div class="column-part">
+                        <div class="is-flex-direction-row is-flex is-align-content-center is-justify-content-start">
+                            <h4 class="column-heading">Shoes</h4>
+                        </div>
+                        <div class="">
+                            <div class="column-section"> Classic</div>
+                            <div class="column-section"> Sport</div>
+                            <div class="is-flex-direction-row column-section is-flex is-align-content-start is-justify-content-start">
+                                <div>Essentials</div>
+                                <div class="badge is-info has-text-white">New</div>
+                            </div>
+                            <div class="column-section"> Evening</div>
+                            <div class="column-section"> Slippers</div>
+                        </div>
+                    </div>
+                    <div class="column-part">
+                        <div class="is-flex-direction-row is-flex is-align-content-center is-justify-content-start">
+                            <h4 class="column-heading">Underwears</h4>
+                        </div>
+                        <ul class="">
+                            <li class="column-section">Boxers</li>
+                            <li class="column-section">Briefs</li>
+                            <li class="column-section">Complects</li>
+                            <li class="column-section">Shorts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column is-3">
+                    <a href="#" class="box p-0 is-relative">
+                        <img class="image is-full is-fullheight"
+                             src="https://images.unsplash.com/photo-1503341733017-1901578f9f1e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                             alt="wild t-shirt">
+                        <div class="over-img">
+                            <div class="col">Collection</div>
+                            <div class="col-text">A great collection of excellent T-shirts</div>
+                        </div>
+                    </a>
+                    <a href="#" class="box p-0 is-relative">
+                        <img class="image is-full is-fullheight"
+                             src="https://images.unsplash.com/photo-1520219306100-ec4afeeefe58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80"
+                             alt="Shoes">
+                        <div class="over-img">
+                            <div class="col">popular</div>
+                            <div class="col-text">Stunning collection of men's shoes</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <header class="has-background-black has-text-white box">
+        <div style="width: 60%;margin: auto;"
+             class="navbar has-background-black is-flex-direction-row is-flex is-align-content-center is-justify-content-space-between">
+            <nav class="navbar-menu">
+                <a href="#" class="navbar-item un-hoverable has-text-weight-medium  has-text-grey-light">Home</a>
+                <a href="#" class="navbar-item un-hoverable has-text-weight-medium mx-4 has-text-grey-light">About</a>
+                <a href="#" class="navbar-item un-hoverable has-text-weight-medium  has-text-grey-light">Our works</a>
+            </nav>
+
+            <div class="navbar-brand is-flex is-align-content-center is-justify-content-space-center">
+                <div class="brand has-text-white">BRAND</div>
+            </div>
+
+            <nav class="navbar-menu">
+                <a href="#" class="navbar-item un-hoverable has-text-weight-medium has-text-grey-light">Services</a>
+                <a href="#" class="navbar-item un-hoverable has-text-weight-medium mx-4 has-text-grey-light">News</a>
+                <a href="#" class="navbar-item un-hoverable has-text-weight-medium has-text-grey-light">Contacts</a>
+            </nav>
+        </div>
+    </header>
+    <br><br><br>
+
+    <div class="is-relative">
+        <header class="box py-0 has-background-black has-text-white is-flex is-flex-direction-column is-align-content-start is-justify-content-start">
+            <nav class="px-5 py-3 app-container has-background-black">
+                <div class="is-flex is-flex-direction-row is-align-content-center is-justify-content-space-between">
+                    <div class="w-full has-text-grey-light">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa mx-4 fa-instagram"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa mx-4 fa-google-plus"></i>
+                        <i class="fa fa-pinterest-p"></i>
+                    </div>
+
+                    <div class="w-full is-flex is-flex-direction-row is-align-content-center is-justify-content-flex-end">
+                        <div class="is-flex is-flex-direction-row is-align-content-center is-justify-content-space-between">
+                            <h1 class="has-text-weight-medium">EN</h1>
+                            <div class="switch mx-4">
+                                <div class="switcher"></div>
+                            </div>
+                            <h1 class="has-text-grey-light has-text-weight-medium">RU</h1>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <hr class="navbar-divider has-background-black-ter" style="height: 1px !important;">
+
+            <nav class="navbar app-container px-5 has-background-black is-flex is-flex-direction-row is-align-content-center is-justify-content-space-between">
+                <div class="navbar-brand">
+                    <div class="navbar-item pl-0">
+                        <h1 class="brand" style="color: white !important;">BRAND</h1>
+                    </div>
+                </div>
+                <nav class="navbar-menu is-flex is-flex-direction-row has-text-weight-medium is-align-content-center is-justify-content-center">
+                    <a href="#" class="un-hoverable navbar-item border-bottom-active">Home</a>
+                    <a href="#" class="has-text-grey-light un-hoverable navbar-item mx-4">About Us</a>
+                    <a href="#" class="has-text-grey-light un-hoverable navbar-item">Team</a>
+                    <a href="#" class="has-text-grey-light un-hoverable navbar-item mx-4">Our Blog</a>
+                    <a href="#" class="has-text-grey-light un-hoverable navbar-item">Contacts</a>
+                </nav>
+                <div class="navbar-end">
+                    <div class="navbar-item pr-0">
+                        <div class="buttons is-flex is-flex-direction-row has-text-weight-medium is-align-content-center is-justify-content-flex-end">
+                            <a href="#" class="has-text-white mr-4"> Sign in </a>
+                            <a href="#" class="button is-rounded is-info"> Sign up </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <br><br><br>
+
+    <header class="navbar w-full box p-0">
+        <div class="w-full has-background-white"></div>
+        <div class="w-full has-background-black"></div>
+        <!--        <div class="w-full has-background-white">-->
+        <!--            <h1>Brand</h1>-->
+        <!--        </div>-->
+        <!--        <div class="w-full has-background-black">-->
+        <!--            <ul class="navbar-menu">-->
+        <!--                <li class="navbar-item has-text-white">Sign up</li>-->
+        <!--                <li class="navbar-item has-text-white">Sign in</li>-->
+        <!--                <li class="navbar-item">-->
+        <!--                    <a href="#" role="button" class="navbar-burger has-text-white" aria-label="menu"-->
+        <!--                       aria-expanded="false">-->
+        <!--                        <span aria-hidden="true"></span>-->
+        <!--                        <span aria-hidden="true"></span>-->
+        <!--                        <span aria-hidden="true"></span>-->
+        <!--                    </a>-->
+        <!--                </li>-->
+        <!--            </ul>-->
+        <!--        </div>-->
+    </header>
+    <br><br><br>
+
+    <header class="navbar box has-background-black has-text-white">
+        <nav class="app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between"
+             role="navigation" aria-label="Navigation">
+
+            <div class="w-full">
+                <div class="navbar-item">
+                    <h1 class="brand" style="color: white">BRAND</h1>
+                </div>
+            </div>
+
+            <div class="w-50%">
+                <div class="navbar-menu">
+                    <div class="navbar-start w-full is-flex-direction-row is-flex is-align-items-center">
+                        <a href="/"
+                           style="background-color: #A054C6 !important;border: unset !important;"
+                           class="navbar-item px-5 un-hoverable is-spaced button has-text-white">
+                            Home
+                        </a>
+                        <a href="/" class="navbar-item un-hoverable px-5 has-text-grey-lighter">About</a>
+                        <a href="/" class="navbar-item un-hoverable px-5 has-text-grey-lighter">Portfolio</a>
+                        <a href="/" class="navbar-item un-hoverable px-5 has-text-grey-lighter">Blog</a>
+                        <a href="/" class="navbar-item un-hoverable px-5 has-text-grey-lighter">Contacts</a>
+                    </div>
+                    <a role="button" class="navbar-burger has-text-white is-active" aria-label="menu"
+                       aria-expanded="false" style="display: block;">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
         </nav>
     </header>
+    <br><br><br>
+
+    <header class="box has-text-white has-background-black navbar">
+        <nav class="app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between"
+             role="navigation" aria-label="Navigation">
+            <div class="navbar-menu">
+                <div class="navbar-item">
+                    <i class="fa fa-bars fa-lg has-text-white"></i>
+                </div>
+            </div>
+
+            <div class="navbar-menu">
+                <h1 class="brand">BRAND</h1>
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons">
+                    <a href="#" class="is-rounded button has-background-black"
+                       style="border: 2px solid #F2752E !important;color: #F2752E!important;">Sign In</a>
+                    <a href="#" class="is-rounded button has-text-white"
+                       style="background-color: #F2752E;border: 2px solid #F2752E !important;">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <header class="box navbar">
+        <nav class="app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between"
+             role="navigation" aria-label="Navigation">
+            <div class="navbar-menu has-text-grey-light">
+                <i class="fa fa-twitter"></i>
+                <i class="fa mx-5 fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa mx-5 fa-google-plus"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+
+            <div class="navbar-menu">
+                <h1 class="brand">BRAND</h1>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <i class="fa fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <header class="box has-text-white has-background-black navbar">
+        <nav class="app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between"
+             role="navigation" aria-label="Navigation">
+            <div class="navbar-menu has-text-grey-light">
+                <i class="fa fa-twitter"></i>
+                <i class="fa mx-5 fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa mx-5 fa-google-plus"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+
+            <div class="navbar-menu">
+                <h1 class="brand">BRAND</h1>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <i class="fa fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <header class="box navbar px-0">
+        <nav class="app-container is-flex-direction-row is-flex is-align-items-center is-justify-content-space-between">
+            <div class="navbar-menu">
+                <h1 class="brand">BRAND</h1>
+            </div>
+            <div class="navbar-menu">
+                <a class="navbar-item un-hoverable is-uppercase has-text-black ">Home</a>
+                <a class="navbar-item un-hoverable is-uppercase has-text-grey-light">Products</a>
+                <a class="navbar-item un-hoverable is-uppercase has-text-grey-light">Services</a>
+                <a class="navbar-item un-hoverable is-uppercase has-text-grey-light">About Us</a>
+                <a class="navbar-item un-hoverable is-uppercase has-text-grey-light">Help</a>
+                <a class="navbar-item un-hoverable is-uppercase has-text-grey-light">Contacs</a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <i class="fa fa-search mr-4 fa-lg"></i>
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <header class="box navbar has-background-black is-flex is-flex-direction-column w-full is-align-content-start is-justify-content-start py-0">
+        <nav class="app-container">
+            <div class="has-text-grey-light w-full is-flex is-align-content-center app-container is-justify-content-space-between py-3">
+                <div class="w-full">
+                    <div class="w-full">
+                        <a href="#" class="has-text-grey-light nav-item pr-5">Home</a>
+                        <a href="#" class="has-text-grey-light nav-item">Shop</a>
+                        <a href="#" class="has-text-grey-light nav-item px-5">About</a>
+                        <a href="#" class="has-text-grey-light nav-item">Blog</a>
+                        <a href="#" class="has-text-grey-light nav-item px-5">Vacancies</a>
+                        <a href="#" class="has-text-grey-light nav-item pr-5">Contacts</a>
+                    </div>
+                </div>
+                <div class="w-50%">
+                    <div class="navbar-menu">
+                        <div class="navbar-end">
+                            <i class="fa px-4 fa-twitter"></i>
+                            <i class="fa px-4 fa-instagram"></i>
+                            <i class="fa px-4 fa-facebook"></i>
+                            <i class="fa px-4 fa-google-plus"></i>
+                            <i class="fa px-4 fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="navbar-divider has-background-black-ter" style="height: 1px !important;">
+
+            <div class="py-3 is-flex is-align-content-center is-justify-content-space-between">
+                <div class="w-full">
+                    <button type="button" class="button is-link">
+                        <div class="pr-6 has-text-weight-medium">Categories</div>
+                        <div>
+                            <i class="fa fa-angle-down fa-lg"></i>
+                        </div>
+                    </button>
+
+                    <div class="pr-2">
+                        <i class="fa fa-search fa-lg has-text-white"></i>
+                    </div>
+                </div>
+
+                <div class="w-50%">
+                    <h1 class="brand" style="color: white">BRAND</h1>
+                </div>
+
+                <div class="is-flex is-align-content-center w-full is-justify-content-space-between">
+                    <div class="is-flex is-align-content-center has-text-white is-justify-content-space-between">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>Cart</span>
+                        <button class="p-2 button is-link is-rounded">
+                            3
+                        </button>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item has-text-white is-flex is-flex-direction-row is-align-content-center is-justify-content-end">
+                            <div class="">
+                                <img src="https://images.unsplash.com/photo-1578489758854-f134a358f08b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                     alt="Client Image" class="avatar">
+                            </div>
+                            <div class="has-text-weight-medium px-3">Patrick Lawrence</div>
+                            <div class="icon is-small">
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <header class="navbar box py-3 is-flex is-flex-direction-row is-align-content-center is-justify-content-space-between">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 class="has-text-weight-bold">BRAND</h1>
+            </div>
+        </div>
+
+        <div class="navbar-menu">
+            <a href="#" class="px-3 mx-3 navbar-item has-text-black nv-x">Home</a>
+            <a href="#" class="px-3 mx-3 nv-x-a navbar-item has-text-grey-light">Products</a>
+            <a href="#" class="px-3 mx-3 nv-x-a navbar-item has-text-grey-light">Services</a>
+            <a href="#" class="px-3 mx-3 nv-x-a navbar-item has-text-grey-light">About Us</a>
+            <a href="#" class="px-3 mx-3 nv-x-a navbar-item has-text-grey-light">Help</a>
+            <a href="#" class="px-3 mx-3 nv-x-a navbar-item has-text-grey-light">Contacts</a>
+        </div>
+
+        <div class="navbar-end">
+            <button class="button is-rounded has-text-white has-shadow" style="background-color: #A054C6 !important;">
+                Buy Now
+            </button>
+        </div>
+    </header>
+    <br><br><br>
 </main>
-
+<br>
+<br>
+<br>
 </body>
-
 </html>
